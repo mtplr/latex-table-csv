@@ -2,10 +2,12 @@
 
 # Matteo Paolieri - 2020 - MIT license
 # Convert csv table to LaTex tables
-# Usage: tabellaltex.sh tabella.csv
+# Usage: latextable.sh table.csv
 
 
 echo Reading $1
+
+# remove suffix from file
 
 file=$1
 out=table-${file/.*/}.tex
